@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+problem1_rag/chroma_db/
+problem1_rag/eval/results/*.json
+problem2_judge/results/*.json
+problem2_judge/logs/*.jsonl
+*.egg-info/
+.venv/
+venv/

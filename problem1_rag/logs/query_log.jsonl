@@ -1,0 +1,2 @@
+{"question": "What is pgvector?", "k": 5, "chunk_count": 5, "used_llm": true, "input_tokens": 894, "output_tokens": 74, "retrieval_latency_ms": 13794.2, "generation_latency_ms": 1110.0, "total_latency_ms": 14904.2}
+{"question": "What is pgvector?", "k": 5, "chunk_count": 5, "used_llm": true, "input_tokens": 894, "output_tokens": 74, "retrieval_latency_ms": 20956.4, "generation_latency_ms": 792.3, "total_latency_ms": 21748.7}

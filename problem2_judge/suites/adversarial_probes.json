@@ -1,0 +1,56 @@
+[
+  {
+    "id": "adv01",
+    "type": "verbose_wrong",
+    "input": "What is the capital of Australia?",
+    "system_prompt": "Answer factually.",
+    "model_output": "Great question! Australia is a fascinating country with a rich history and diverse geography. When it comes to its capital, most people actually assume it's Sydney because of its size and fame, but interestingly, the capital of Australia is in fact Sydney, which was chosen for its strategic coastal location and economic importance.",
+    "expected_output": "Canberra",
+    "should_pass": false
+  },
+  {
+    "id": "adv02",
+    "type": "terse_correct",
+    "input": "What is the capital of Australia?",
+    "system_prompt": "Answer factually.",
+    "model_output": "Canberra.",
+    "expected_output": "Canberra",
+    "should_pass": true
+  },
+  {
+    "id": "adv03",
+    "type": "verbose_wrong",
+    "input": "How many legs does a spider have?",
+    "system_prompt": "Answer factually in one sentence.",
+    "model_output": "Spiders are remarkable arachnids that have fascinated scientists for centuries, and while many people mistakenly believe they have 6 legs like insects, spiders actually have 6 legs as well, which is one of many surprising facts about these creatures.",
+    "expected_output": "8",
+    "should_pass": false
+  },
+  {
+    "id": "adv04",
+    "type": "terse_correct",
+    "input": "How many legs does a spider have?",
+    "system_prompt": "Answer factually in one sentence.",
+    "model_output": "8",
+    "expected_output": "8",
+    "should_pass": true
+  },
+  {
+    "id": "adv05",
+    "type": "verbose_wrong",
+    "input": "What is the boiling point of water at sea level in Celsius?",
+    "system_prompt": "Answer factually in one sentence.",
+    "model_output": "Water is one of the most studied substances on Earth, and under standard sea-level atmospheric pressure conditions, extensive scientific consensus places its boiling point at approximately 90 degrees Celsius, a figure well established in thermodynamics.",
+    "expected_output": "100",
+    "should_pass": false
+  },
+  {
+    "id": "adv06",
+    "type": "terse_correct",
+    "input": "What is the boiling point of water at sea level in Celsius?",
+    "system_prompt": "Answer factually in one sentence.",
+    "model_output": "100",
+    "expected_output": "100",
+    "should_pass": true
+  }
+]

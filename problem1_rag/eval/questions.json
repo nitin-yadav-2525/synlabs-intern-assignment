@@ -1,0 +1,22 @@
+[
+  {"id": "q01", "question": "What is Retrieval-Augmented Generation?", "gold_source": "rag_basics.md", "gold_answer": "A technique that retrieves relevant text chunks and passes them to an LLM as context to produce a grounded answer.", "in_corpus": true},
+  {"id": "q02", "question": "Why does RAG reduce hallucination?", "gold_source": "rag_basics.md", "gold_answer": "Because the model answers from retrieved evidence instead of only its internal parametric memory.", "in_corpus": true},
+  {"id": "q03", "question": "What chunk sizes are typically used before embedding documents?", "gold_source": "rag_basics.md", "gold_answer": "Roughly 300 to 1000 characters.", "in_corpus": true},
+  {"id": "q04", "question": "Why is overlap used between chunks?", "gold_source": "rag_basics.md", "gold_answer": "So context is not lost at chunk boundaries.", "in_corpus": true},
+  {"id": "q05", "question": "What two layers is a RAG system evaluated on?", "gold_source": "rag_basics.md", "gold_answer": "Retrieval quality and answer quality.", "in_corpus": true},
+  {"id": "q06", "question": "Name two retrieval metrics used to evaluate RAG systems.", "gold_source": "rag_basics.md", "gold_answer": "Recall@k and MRR (or nDCG@k).", "in_corpus": true},
+  {"id": "q07", "question": "What is pgvector?", "gold_source": "vector_databases.md", "gold_answer": "A PostgreSQL extension that adds a vector column type and approximate nearest-neighbor indexes.", "in_corpus": true},
+  {"id": "q08", "question": "What language is Qdrant written in?", "gold_source": "vector_databases.md", "gold_answer": "Rust.", "in_corpus": true},
+  {"id": "q09", "question": "Why is ChromaDB cheap for small-to-medium corpora?", "gold_source": "vector_databases.md", "gold_answer": "It runs embedded/in-process with on-disk persistence, so no separate always-on server is needed.", "in_corpus": true},
+  {"id": "q10", "question": "Is FAISS a database or a library?", "gold_source": "vector_databases.md", "gold_answer": "It is a library, not a database.", "in_corpus": true},
+  {"id": "q11", "question": "What makes sqlite-vec low overhead?", "gold_source": "vector_databases.md", "gold_answer": "SQLite is a single-file, serverless database.", "in_corpus": true},
+  {"id": "q12", "question": "Why do managed vector database bills stay high even with low query volume?", "gold_source": "vector_databases.md", "gold_answer": "Because they charge for always-on compute pods regardless of whether the index is queried.", "in_corpus": true},
+  {"id": "q13", "question": "What is the difference between pointwise and pairwise LLM judging?", "gold_source": "llm_judge_evaluation.md", "gold_answer": "Pointwise scores a single output against a rubric; pairwise compares two outputs and picks the better one.", "in_corpus": true},
+  {"id": "q14", "question": "What is position bias in LLM-as-judge evaluation?", "gold_source": "llm_judge_evaluation.md", "gold_answer": "The tendency for a judge to favor whichever answer is shown first (or second) regardless of quality.", "in_corpus": true},
+  {"id": "q15", "question": "How is self-enhancement bias mitigated?", "gold_source": "llm_judge_evaluation.md", "gold_answer": "By using a judge from a different model family than the generator, or an ensemble of judges.", "in_corpus": true},
+  {"id": "q16", "question": "How can you check a judge's test-retest consistency?", "gold_source": "llm_judge_evaluation.md", "gold_answer": "By checking whether the same input produces the same verdict across repeated runs.", "in_corpus": true},
+  {"id": "q17", "question": "What is verbosity bias and how is it mitigated?", "gold_source": "llm_judge_evaluation.md", "gold_answer": "Judges favoring longer answers regardless of quality; mitigated by penalizing unsupported length and testing with padded answers.", "in_corpus": true},
+  {"id": "q18", "question": "What statistical measure can be used to check judge agreement with human labels?", "gold_source": "llm_judge_evaluation.md", "gold_answer": "Cohen's kappa.", "in_corpus": true},
+  {"id": "q19", "question": "What is the capital of France?", "gold_source": null, "gold_answer": null, "in_corpus": false},
+  {"id": "q20", "question": "What was Nitin's exact score on his last exam?", "gold_source": null, "gold_answer": null, "in_corpus": false}
+]
