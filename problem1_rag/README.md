@@ -9,14 +9,14 @@ no always-on server), with retrieval/answer/cost/latency evaluation.
 - A Groq API key (for the answer-generation LLM and the eval judge)
 - No GPU required. No external services to run — Chroma persists to a local folder.
 
-## 2. Setup (copy-paste, ~5 min)
+## 2. Setup 
 
 ```bash
 cd problem1_rag
 python -m venv venv
 venv\Scripts\activate        # Windows. On Mac/Linux: source venv/bin/activate
 pip install -r requirements.txt
-copy .env.example .env       # Windows. On Mac/Linux: cp .env.example .env
+env.example .env       # Windows. On Mac/Linux: cp .env.example .env
 # now edit .env and paste your GROQ_API_KEY
 ```
 
